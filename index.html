@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#8B1A4A">
+<title>Couture Corner Jaipur | Clothing Store in Nirman Nagar, Kings Road</title>
+<meta name="description" content="Shop the latest ethnic, festive, and western wear at Couture Corner, Jaipur. Located on Kings Road, Nirman Nagar. Visit us 7 days a week. Call 07290060072.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1a1209;background:#fdfcf7;-webkit-font-smoothing:antialiased}
+.wa-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s,box-shadow .2s}.wa-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.6)}
+[data-r]{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
+[data-r].r-in{opacity:1;transform:none;}
+[data-r][data-d="1"]{transition-delay:.1s;}[data-r][data-d="2"]{transition-delay:.22s;}
+[data-r][data-d="3"]{transition-delay:.34s;}[data-r][data-d="4"]{transition-delay:.46s;}
+[data-r][data-d="5"]{transition-delay:.58s;}[data-r][data-d="6"]{transition-delay:.70s;}
+.nav-s{box-shadow:0 2px 24px rgba(0,0,0,.12)!important;}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(253,252,247,.97);backdrop-filter:blur(14px);border-bottom:1px solid #ede0c4;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:64px;transition:box-shadow .3s}
+.nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:#8B1A4A;letter-spacing:.06em}
+.nav-cta{background:#8B1A4A;color:#fff;padding:9px 22px;border-radius:2px;text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+/* HERO */
+.hero{position:relative;height:100svh;min-height:600px;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:-15%;width:130%;height:130%;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vXxy_u3OAipkhNC3nMY56Og-UUfi4JGOWDnEOabWQiz4UObTz5SpeJIrgFcd3NgFZEsxjxUMghPBgBfEuoy0uW2RKdrIeKd_P_5oC7beJxjc2Q4XkyiNgSfBB_l7VPTrhZP16eCo3ZN5pT0MzXNMGPBoW_wJ73XuJnMYb22Axn3AvmfufgYiMrF46dgh4SAA-iD5NSsCeBlkI5jZQmd7DaGANbjV0RJ09BNwrLOhG47JECKMYMwMWMSqA1C4wJs_tEWmNfpTLwz9QhZ79kpDR8jdY1fGDCNselIrji8tt-uQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs');background-size:cover;background-position:center;will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(8,5,0,.92) 0%,rgba(8,5,0,.6) 55%,rgba(8,5,0,.15) 100%)}
+.hero-content{position:relative;z-index:2;padding:0 5vw;max-width:580px;color:#fff}
+.hero-eyebrow{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:#D4A017;margin-bottom:22px;font-weight:500}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,6vw,4rem);font-weight:700;line-height:1.15;margin-bottom:20px;letter-spacing:-.01em}
+.hero p{font-size:.97rem;opacity:.8;line-height:1.8;margin-bottom:32px;max-width:460px;font-weight:300}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-gold{background:#D4A017;color:#fff;padding:14px 34px;text-decoration:none;font-weight:600;font-size:.84rem;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;transition:opacity .2s,transform .15s}
+.btn-gold:hover{opacity:.9;transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.4);color:#fff;padding:13px 28px;text-decoration:none;font-size:.84rem;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;transition:background .2s}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+/* TRUST BAR */
+.trust-bar{background:#8B1A4A;display:grid;grid-template-columns:repeat(2,1fr)}
+@media(min-width:640px){.trust-bar{grid-template-columns:repeat(4,1fr)}}
+.trust-item{padding:22px 16px;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
+.trust-item:last-child{border:none}
+.trust-num{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#D4A017;line-height:1}
+.trust-lbl{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.48);margin-top:5px}
+/* SECTIONS */
+section{padding:68px 5vw}
+.container{max-width:1000px;margin:0 auto}
+.sec-label{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:#D4A017;margin-bottom:10px;font-weight:500}
+.sec-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.5rem);color:#8B1A4A;margin-bottom:14px;font-weight:700;letter-spacing:-.01em}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
+@media(min-width:768px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-img-wrap{position:relative}
+.about-img{width:100%;aspect-ratio:4/5;object-fit:cover;box-shadow:0 20px 56px rgba(0,0,0,.18)}
+.about-img-caption{position:absolute;bottom:-12px;right:-12px;background:#D4A017;color:#fff;padding:12px 18px;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.about-text p{color:#5a4030;line-height:1.88;margin-bottom:14px;font-size:.93rem;font-weight:300}
+.hl-list{list-style:none;margin-top:20px;border-top:1px solid #ede0c4}
+.hl-list li{padding:10px 0 10px 22px;position:relative;color:#5a4030;font-size:.87rem;border-bottom:1px solid #ede0c4;font-weight:300}
+.hl-list li:before{content:'◆';color:#D4A017;position:absolute;left:0;font-size:.6rem;top:14px}
+/* PRODUCTS */
+.products-bg{background:#fff}
+.prod-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:40px}
+@media(min-width:480px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.prod-grid{grid-template-columns:repeat(3,1fr)}}
+.prod-card{border:1px solid #ede0c4;background:#fdfcf7;padding:28px 24px;transition:transform .22s,box-shadow .22s;position:relative;overflow:hidden}
+.prod-card:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(0,0,0,.1)}
+.prod-card:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#8B1A4A,#D4A017)}
+.prod-icon{font-size:1.6rem;margin-bottom:14px;display:block}
+.prod-card h3{font-family:'Cormorant Garamond',serif;color:#8B1A4A;font-size:1.15rem;font-weight:700;margin-bottom:10px}
+.prod-card p{color:#7a6040;font-size:.86rem;line-height:1.65;font-weight:300}
+/* PARALLAX */
+.ps-wrap{position:relative;min-height:360px;display:flex;align-items:center;overflow:hidden}
+#ps{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vtg75GW0UyXcr_WiM55glDjX3vznhrmHPJ1yD8iGfBRGxq3EEDrZ_f6kRPR4tCpyg-zajYThbKioof-lDxmREyS2ecybDHZImiyu9gO3cQx70VQ10sNLhzTVnFl1xnBVG3otf9i6jVDR-EpI5j9jf1DL_OHu41y_oDZAVEYRMHPGNEQq-ItPNWEp6PQeLepkCZ66DNl5lmMP-4zyfEUpss_Jkr8pXDECCMMYhJE1G1UK83HWlDYp_omolr6-b0b08-VdkZO7Nvi7VrP5f0shQspQy1OTheLrNg0zjPn6k2aA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs');background-size:cover;background-position:center;will-change:transform;filter:brightness(.4)}
+.ps-overlay{position:absolute;inset:0}
+.ps-content{position:relative;z-index:2;padding:60px 5vw;color:#fff;max-width:560px}
+.ps-content .sec-label{color:rgba(255,255,255,.5)}
+.ps-content .sec-h2{color:#fff}
+.ps-content p{color:rgba(255,255,255,.65);margin-bottom:28px;font-size:.94rem;line-height:1.75;font-weight:300}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:opacity .3s}
+.gallery-grid img:hover{opacity:.85}
+/* REVIEWS */
+.rv-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
+@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv-card{border:1px solid #ede0c4;padding:26px;background:#fdfcf7}
+.rv-stars{color:#D4A017;margin-bottom:10px;font-size:1rem}
+.rv-text{color:#5a4030;font-size:.9rem;line-height:1.78;font-style:italic;margin-bottom:14px;font-weight:300}
+.rv-author{color:#8B1A4A;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
+.ci-row{display:flex;align-items:flex-start;gap:14px;padding:18px;border:1px solid #ede0c4;background:#fdfcf7}
+.ci-icon{width:38px;height:38px;background:#8B1A4A10;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;border:1px solid #ede0c4}
+.ci-row h4{font-size:.7rem;color:#9a8060;font-weight:500;margin-bottom:4px;text-transform:uppercase;letter-spacing:.1em}
+.ci-row a,.ci-row p{color:#8B1A4A;text-decoration:none;font-size:.9rem;font-weight:600}
+.contact-cta{background:#8B1A4A;padding:36px;color:#fff;display:flex;flex-direction:column;gap:14px}
+.contact-cta h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700}
+.contact-cta p{opacity:.75;font-size:.9rem;line-height:1.65;font-weight:300}
+.cta-btn-w{background:#D4A017;color:#fff;padding:14px 28px;text-decoration:none;font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;display:inline-block;transition:opacity .2s}
+.cta-btn-w:hover{opacity:.88}
+.cta-btn-outline{border:1px solid rgba(255,255,255,.4);color:rgba(255,255,255,.85);padding:12px 26px;text-decoration:none;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;display:inline-block;margin-top:8px}
+footer{background:#0a0600;color:#7a6040;text-align:center;padding:24px;font-size:.78rem;letter-spacing:.04em}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-brand">couturecorner.ind~</span>
+  <a href="https://wa.me/917290060072?text=Hi!%20I%20visited%20your%20website%20and%20I'm%20interested%20in%20exploring%20the%20clothing%20collections%20at%20Couture%20Corner.%20Could%20you%20please%20share%20more%20details%20about%20your%20latest%20arrivals%20and%20offers%3F" class="nav-cta">Enquire</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg" id="hp"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">⭐ 5/5 · Trusted Since Day One</p>
+    <h1>Where Style Meets Tradition — Dressed to Impress</h1>
+    <p>Explore our curated collection of fashion that blends contemporary trends with timeless elegance, right in the heart of Jaipur.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/917290060072?text=Hi!%20I%20visited%20your%20website%20and%20I'm%20interested%20in%20exploring%20the%20clothing%20collections%20at%20Couture%20Corner.%20Could%20you%20please%20share%20more%20details%20about%20your%20latest%20arrivals%20and%20offers%3F" class="btn-gold">Visit Us &amp; Explore the Collection</a>
+      <a href="tel:072900 60072" class="btn-ghost">📞 Call Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="trust-bar" data-r>
+  <div class="trust-item"><div class="trust-num">5/5</div><div class="trust-lbl">Rating</div></div>
+  <div class="trust-item"><div class="trust-num">✓</div><div class="trust-lbl">Certified</div></div>
+  <div class="trust-item"><div class="trust-num">100%</div><div class="trust-lbl">Genuine</div></div>
+  <div class="trust-item"><div class="trust-num">Local</div><div class="trust-lbl">Trusted</div></div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap" data-r>
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vXxy_u3OAipkhNC3nMY56Og-UUfi4JGOWDnEOabWQiz4UObTz5SpeJIrgFcd3NgFZEsxjxUMghPBgBfEuoy0uW2RKdrIeKd_P_5oC7beJxjc2Q4XkyiNgSfBB_l7VPTrhZP16eCo3ZN5pT0MzXNMGPBoW_wJ73XuJnMYb22Axn3AvmfufgYiMrF46dgh4SAA-iD5NSsCeBlkI5jZQmd7DaGANbjV0RJ09BNwrLOhG47JECKMYMwMWMSqA1C4wJs_tEWmNfpTLwz9QhZ79kpDR8jdY1fGDCNselIrji8tt-uQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="couturecorner.ind~" class="about-img" loading="lazy" onerror="this.src='https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vXxy_u3OAipkhNC3nMY56Og-UUfi4JGOWDnEOabWQiz4UObTz5SpeJIrgFcd3NgFZEsxjxUMghPBgBfEuoy0uW2RKdrIeKd_P_5oC7beJxjc2Q4XkyiNgSfBB_l7VPTrhZP16eCo3ZN5pT0MzXNMGPBoW_wJ73XuJnMYb22Axn3AvmfufgYiMrF46dgh4SAA-iD5NSsCeBlkI5jZQmd7DaGANbjV0RJ09BNwrLOhG47JECKMYMwMWMSqA1C4wJs_tEWmNfpTLwz9QhZ79kpDR8jdY1fGDCNselIrji8tt-uQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs'">
+        <div class="about-img-caption">Est. 2026</div>
+      </div>
+      <div data-r data-d="2">
+        <p class="sec-label">Our Story</p>
+        <h2 class="sec-h2">couturecorner.ind~</h2>
+        <p class="about-text" style="color:#5a4030;line-height:1.88;margin-bottom:14px;font-size:.93rem;font-weight:300">Welcome to Couture Corner, your premier fashion destination located on Kings Road, Nirman Nagar, Jaipur. We are passionate about bringing you the finest clothing selections that celebrate both modern style and the rich textile heritage of Rajasthan. Whether you are looking for everyday wear, festive attire, or something special for a grand occasion, our store offers a diverse and carefully curated wardrobe for every need.</p><p class="about-text" style="color:#5a4030;line-height:1.88;margin-bottom:14px;font-size:.93rem;font-weight:300">Situated near Samrat Restaurant in the vibrant Ajmera Garden area, Couture Corner is more than just a store — it is a style experience. Our knowledgeable team is dedicated to helping every customer find the perfect outfit that reflects their personality and fits their budget. We take pride in offering quality fabrics, on-trend designs, and warm, personalized service to every visitor who walks through our doors. Visit us Monday through Sunday and let us transform the way you dress.</p>
+        <ul class="hl-list"><li>Centrally located on Kings Road, Nirman Nagar, Jaipur — easy to find and access</li><li>Open 7 days a week from 11:00 AM to 10:00 PM for your shopping convenience</li><li>Curated collections blending traditional Rajasthani craftsmanship with modern fashion trends</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products-bg">
+  <div class="container">
+    <div data-r><p class="sec-label">Collections</p><h2 class="sec-h2">What We Offer</h2></div>
+    <div class="prod-grid">
+      <div class="prod-card" data-r data-d="1"><span class="prod-icon">💎</span><h3>Men's Clothing</h3><p>A wide range of casual, formal, and ethnic wear for men, crafted from premium fabrics for comfort and style.</p></div><div class="prod-card" data-r data-d="2"><span class="prod-icon">✨</span><h3>Women's Fashion</h3><p>From elegant salwar suits and sarees to chic western wear, our women's collection caters to every taste and occasion.</p></div><div class="prod-card" data-r data-d="3"><span class="prod-icon">🏆</span><h3>Festive &amp; Ethnic Wear</h3><p>Celebrate every festival and special occasion in style with our exclusive range of traditional and festive outfits.</p></div><div class="prod-card" data-r data-d="1"><span class="prod-icon">⭐</span><h3>Kids' Collection</h3><p>Adorable, durable, and trendy clothing for children of all ages, perfect for school, play, and special events.</p></div><div class="prod-card" data-r data-d="2"><span class="prod-icon">🎁</span><h3>Accessories &amp; Add-ons</h3><p>Complete your look with our handpicked selection of fashion accessories including duppattas, stoles, and more.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ps-wrap" data-r>
+  <div id="ps"></div>
+  <div class="ps-overlay"></div>
+  <div class="ps-content">
+    <p class="sec-label">Visit Our Store</p>
+    <h2 class="sec-h2">Experience It In Person</h2>
+    <p>66, Kings Rd, near SAMRAT RESTAURANT 302019, Ajmera Garden, Nirman Nagar, DCM, Jaipur, Rajasthan 302019, India</p>
+    <a href="https://wa.me/917290060072?text=Hi!%20I%20visited%20your%20website%20and%20I'm%20interested%20in%20exploring%20the%20clothing%20collections%20at%20Couture%20Corner.%20Could%20you%20please%20share%20more%20details%20about%20your%20latest%20arrivals%20and%20offers%3F" style="background:#D4A017;color:#fff;padding:13px 32px;text-decoration:none;font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;display:inline-block">💬 WhatsApp Us</a>
+  </div>
+</div>
+
+<section><div class="container"><div data-r><p class="sec-label">Gallery</p><h2 class="sec-h2">Our Collection</h2></div><div class="gallery-grid" style="margin-top:28px"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vXxy_u3OAipkhNC3nMY56Og-UUfi4JGOWDnEOabWQiz4UObTz5SpeJIrgFcd3NgFZEsxjxUMghPBgBfEuoy0uW2RKdrIeKd_P_5oC7beJxjc2Q4XkyiNgSfBB_l7VPTrhZP16eCo3ZN5pT0MzXNMGPBoW_wJ73XuJnMYb22Axn3AvmfufgYiMrF46dgh4SAA-iD5NSsCeBlkI5jZQmd7DaGANbjV0RJ09BNwrLOhG47JECKMYMwMWMSqA1C4wJs_tEWmNfpTLwz9QhZ79kpDR8jdY1fGDCNselIrji8tt-uQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="couturecorner.ind~" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vtg75GW0UyXcr_WiM55glDjX3vznhrmHPJ1yD8iGfBRGxq3EEDrZ_f6kRPR4tCpyg-zajYThbKioof-lDxmREyS2ecybDHZImiyu9gO3cQx70VQ10sNLhzTVnFl1xnBVG3otf9i6jVDR-EpI5j9jf1DL_OHu41y_oDZAVEYRMHPGNEQq-ItPNWEp6PQeLepkCZ66DNl5lmMP-4zyfEUpss_Jkr8pXDECCMMYhJE1G1UK83HWlDYp_omolr6-b0b08-VdkZO7Nvi7VrP5f0shQspQy1OTheLrNg0zjPn6k2aA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="couturecorner.ind~" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-tzqdv1eWFFKl2nMTwPcwpyDnchnTBlVRHg8JCPqSBgiQZamydgFe8vWhvAPfCf8MMKfCbSty1AnchSmyhagSMwQR2wNrVcXxmjdIXXWd7CS1QEBCiYyO2FbBzO4t_D3nGSY9K84HzfR7xWs_AGM8VA4nvFtMU-y4q_3bTigTpSKpfIPiuvRh_BSKaz7e1sFk398yLVkWAytqLfCz25BaJ1E3Hr1awZjCyEXPFMooCTvmPZL9xY472kaLIGia3nqls400nSPaS6cZjv43SN0lJhvcdVd4tG4Ukm2CpVoF_PjA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="couturecorner.ind~" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-tUGDGtGykKT4bWZHjwRoSQUI3DCXL4NxCHtbhUtPOQgCpXExVQJlfPSztKBIzIFMFCdoba-M58iO2gR8CN2erLG0QMqbNqJSIwJJP8zHE91Twv0meRQuMtJZGoO5OVGW6HCKkmkx4rQqSF0XmipFX7zvVP2mbtdIzDIAyZ75UhvdC-Zxof82DoQkop2OX0cNt_tntyarnPCLsnTBN8_iahkG3kUXyF3Ucd8sA7ofoUTtjBj2kBr8gylHbg_uz8pRHZW_RZ0aT4SHhs_4digzlx0yvOUjN6kRzYsUtDnVp_wA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="couturecorner.ind~" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-sPnwsF5ULAlUZAa4ZapQ1iUbkPhEpZ8VC1Jx9a94GsBca_nkwPoPFOnQAZSSOt3mpGePSDPIq4cGEqyYkoniWQ2dqU-x9RuwEnUX--UPXmqWJanCerdXvVSuEzy75hloH06mQm2Jv-dwC5PaHzSXBVO3DCh5CQC84xxHEhsUSpmB44LwaaHJ6RZGbx9lS9GJw6KZXeqHdYcPU7XhzT0i9nK_x8-0eiu4wYa-hXAI17qx1Hkzey3uCmgJs2JJKfdMNOXIcDM4O0j81bkCs007ilsE3TfTRZIQYBj5LcBw11Dw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="couturecorner.ind~" loading="lazy" onerror="this.parentElement.remove()"></div></div></section>
+
+<section>
+  <div class="container">
+    <div data-r><p class="sec-label">Reviews</p><h2 class="sec-h2">What Customers Say</h2></div>
+    <div class="rv-grid">
+      <div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"Couture Corner has an amazing collection! I found the perfect outfit for my sister's wedding. The staff was very helpful and the prices were reasonable."</p><div class="rv-author">— Priya Sharma</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"Great variety of ethnic and western wear under one roof. The quality of fabric is excellent. Highly recommend this store to everyone in Jaipur!"</p><div class="rv-author">— Rahul Meena</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"I love shopping here! The staff always helps me pick the best outfit. The festive collection this season was absolutely stunning."</p><div class="rv-author">— Sunita Agarwal</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#f7f2e8">
+  <div class="container">
+    <div class="contact-grid">
+      <div style="display:flex;flex-direction:column;gap:14px" data-r>
+        <div data-r><p class="sec-label">Find Us</p><h2 class="sec-h2">Visit Our Store</h2></div>
+        <div class="ci-row"><div class="ci-icon">📞</div><div><h4>Phone</h4><a href="tel:072900 60072">072900 60072</a></div></div>
+        <div class="ci-row"><div class="ci-icon">📍</div><div><h4>Address</h4><p>66, Kings Rd, near SAMRAT RESTAURANT 302019, Ajmera Garden, Nirman Nagar, DCM, Jaipur, Rajasthan 302019, India</p></div></div>
+        <div class="ci-row"><div class="ci-icon">🕐</div><div><h4>Hours</h4><p>Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 AM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 PM – 12:00 AM | Sunday: 12:00 AM – 10:00 PM</p></div></div>
+        <div class="ci-row"><div class="ci-icon">🗺️</div><div><h4>Map</h4><a href="https://maps.google.com/?cid=9715634074000638448">View on Google Maps</a></div></div>
+      </div>
+      <div class="contact-cta" data-r data-d="2">
+        <h3>Get in Touch</h3>
+        <p>Browse our latest collection or enquire about custom orders. We'd love to hear from you.</p>
+        <a href="https://wa.me/917290060072?text=Hi!%20I%20visited%20your%20website%20and%20I'm%20interested%20in%20exploring%20the%20clothing%20collections%20at%20Couture%20Corner.%20Could%20you%20please%20share%20more%20details%20about%20your%20latest%20arrivals%20and%20offers%3F" class="cta-btn-w">💬 Chat on WhatsApp</a>
+        <a href="tel:072900 60072" class="cta-btn-outline">📞 072900 60072</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>© 2026 couturecorner.ind~ · 66, Kings Rd, near SAMRAT RESTAURANT 302019, Ajmera Garden, Nirman Nagar, DCM, Jaipur, Rajasthan 302019, India</footer>
+<a href="https://wa.me/917290060072?text=Hi!%20I%20visited%20your%20website%20and%20I'm%20interested%20in%20exploring%20the%20clothing%20collections%20at%20Couture%20Corner.%20Could%20you%20please%20share%20more%20details%20about%20your%20latest%20arrivals%20and%20offers%3F" class="wa-fab" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Scroll-reveal
+(function(){
+  var els=document.querySelectorAll('[data-r]');
+  if(!els.length)return;
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('r-in');obs.unobserve(e.target);}});
+  },{threshold:0.1,rootMargin:'0px 0px -48px 0px'});
+  els.forEach(function(el){obs.observe(el);});
+})();
+// Nav shadow
+(function(){
+  var nav=document.querySelector('nav');
+  if(!nav)return;
+  window.addEventListener('scroll',function(){nav.classList.toggle('nav-s',window.scrollY>50);},{passive:true});
+})();
+// Parallax
+if(window.innerWidth>768){
+  var hp=document.getElementById('hp'),ps=document.getElementById('ps');
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(hp)hp.style.transform='translateY('+y*.3+'px)';
+    if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.2+'px)';}
+  },{passive:true});
+}
+</script>
+</body></html>
